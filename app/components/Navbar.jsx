@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -54,13 +55,16 @@ export default function Navbar() {
           )}
         </nav>
 
-        {/* Desktop CTA */}
-        <Button
-          size="sm"
-          className="hidden md:flex bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full px-6 py-5 font-semibold shadow-lg hover:opacity-90 hover:shadow-xl transition-all duration-300"
-        >
-          Get Started
-        </Button>
+        {/* Desktop CTA and Theme Toggle */}
+        <div className="flex items-center gap-3">
+          
+          <Button
+            size="sm"
+            className="hidden md:flex bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full px-6 py-5 font-semibold shadow-lg hover:opacity-90 hover:shadow-xl transition-all duration-300"
+          >
+            Get Started
+          </Button>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -78,7 +82,7 @@ export default function Navbar() {
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-card border-t border-border py-4 px-6 space-y-4 text-foreground/80 text-sm">
+        <div className="bg-card border-t border-border py-4 px-6 space-y-4 text-foreground/80 text-sm flex flex-col items-center">
           {["Features", "Pricing", "Testimonials", "Contact Us"].map(
             (item) => (
               <a
@@ -91,8 +95,8 @@ export default function Navbar() {
               </a>
             )
           )}
-
-          <Button className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full shadow-md">
+          <ThemeToggle />
+          <Button className="w-fit bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full shadow-md">
             Start Trial
           </Button>
         </div>

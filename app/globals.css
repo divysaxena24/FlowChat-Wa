@@ -8,6 +8,10 @@
 @custom-variant dark (&:is(.dark *));
 
 html {
+  color-scheme: light;
+}
+
+html.dark {
   color-scheme: dark;
 }
 
@@ -54,30 +58,31 @@ html {
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.065 0 0);
-  --foreground: oklch(0.92 0 0);
-  --card: oklch(0.08 0 0);
-  --card-foreground: oklch(0.92 0 0);
-  --popover: oklch(0.065 0 0);
-  --popover-foreground: oklch(0.92 0 0);
-  --primary: oklch(0.65 0.15 250);
+  /* Light theme colors */
+  --background: oklch(0.98 0.01 240);
+  --foreground: oklch(0.15 0.02 240);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.02 240);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.02 240);
+  --primary: oklch(0.4 0.2 250);
   --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.15 0 0);
-  --secondary-foreground: oklch(0.92 0 0);
-  --muted: oklch(0.15 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.12 0 0);
-  --accent-foreground: oklch(0.7 0 0);
-  --destructive: oklch(0.6 0.2 20);
+  --secondary: oklch(0.9 0.01 240);
+  --secondary-foreground: oklch(0.3 0.05 240);
+  --muted: oklch(0.9 0.01 240);
+  --muted-foreground: oklch(0.6 0.01 240);
+  --accent: oklch(0.9 0.01 240);
+  --accent-foreground: oklch(0.15 0.02 240);
+  --destructive: oklch(0.7 0.2 20);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.2 0 0);
-  --input: oklch(0.2 0 0);
-  --ring: oklch(0.65 0.15 250);
-  --chart-1: oklch(0.7 0.25 250);
-  --chart-2: oklch(0.65 0.2 200);
-  --chart-3: oklch(0.6 0.15 150);
+  --border: oklch(0.8 0.01 240);
+  --input: oklch(0.8 0.01 240);
+  --ring: oklch(0.4 0.2 250);
+  --chart-1: oklch(0.6 0.15 250);
+  --chart-2: oklch(0.5 0.1 200);
+  --chart-3: oklch(0.4 0.08 150);
   --chart-4: oklch(0.55 0.1 100);
-  --chart-5: oklch(0.5 0.05 50);
+  --chart-5: oklch(0.65 0.05 50);
   --radius: 0.5rem;
 }
 
@@ -152,6 +157,11 @@ p {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.dark .card-glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Enhanced button styles */
