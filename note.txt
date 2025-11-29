@@ -1,8 +1,8 @@
-1. Vercel v0 was used to generate the initial 
+1. Vercel v0 was used to generate the initial
    layout structure for the Navbar, Hero Section,
    and other UI sections.
 
-2. It provided the base Tailwind CSS styling, 
+2. It provided the base Tailwind CSS styling,
    spacing, and responsive grid setup for the components.
 
 3. The tool created ready-made building blocks like
@@ -12,6 +12,8 @@
    component skeletons that were later customized
    manually.
 
-5. Animations, interactivity, and design 
-   refinements were added after v0 produced the 
+5. Animations, interactivity, and design
+   refinements were added after v0 produced the
    foundational code.
+
+Note: The logo.png file in the public folder needs to be updated with the actual FlowChat WA logo to replace the default Next.js logo that appears as the favicon.

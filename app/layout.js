@@ -15,6 +15,18 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "FlowChat WA - WhatsApp Automation Platform",
   description: "AI-powered WhatsApp automation for businesses",
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        url: '/logo.png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
