@@ -1,0 +1,17 @@
+1. Vercel v0 was used to generate the initial 
+   layout structure for the Navbar, Hero Section,
+   and other UI sections.
+
+2. It provided the base Tailwind CSS styling, 
+   spacing, and responsive grid setup for the components.
+
+3. The tool created ready-made building blocks like
+   buttons, containers, and section wrappers.
+
+4. It accelerated development by generating
+   component skeletons that were later customized
+   manually.
+
+5. Animations, interactivity, and design 
+   refinements were added after v0 produced the 
+   foundational code.
